@@ -15,12 +15,27 @@
             margin: 0 auto;
             line-height: 1.6;
         }
-        h1 {
-            text-align: center;
-            background-color: black;
-            color: white;
-            padding: 3rem;
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem 2rem;
+        }
+        header .logo {
+            height: 50px;
+            width: auto;
+        }
+        header .logo img {
+            height: 100%;
+            width: auto;
+            display: block;
+        }
+        header h1 {
             margin: 0;
+            font-size: 1.5rem;
+            width: 100%;
+            text-align: center;
         }
         h2 {
             margin-top: 2rem;
@@ -68,6 +83,9 @@
 </head>
 <body>
     <header>
+        <a href="https://www.perlick.com" class="logo" aria-label="Perlick Corporation">
+            <img src="https://cdn.prod.website-files.com/65b96d44a15b3d7627ae6487/68b73df14ebb9c6328112008_Perlick_MasterLockup_50px.svg" alt="Perlick Corporation">
+        </a>
         <h1>Perlick Corporation Privacy Policy</h1>
     </header>
     <main class="content">
